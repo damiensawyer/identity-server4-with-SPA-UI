@@ -14,18 +14,18 @@ services:
     ports:
       - "8082:80"
 
-  api:
-    build: ./api
-    ports:
-      - "8083:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - Authority=http://id4
+  # api:
+  #   build: ./api
+  #   ports:
+  #     - "8083:80"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - Authority=http://id4
 
-  id4:
-    build: ./id4
-    ports:
-      - "5000:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - Issuer=http://id4
+  # id4:
+  #   build: ./id4
+  #   ports:
+  #     - "5000:80"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - Issuer=http://id4
